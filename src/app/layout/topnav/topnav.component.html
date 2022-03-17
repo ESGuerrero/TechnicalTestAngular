@@ -1,0 +1,12 @@
+<div class="topnav">
+    <a *ngIf="link1" routerLink="{{ link1 }}" (click)="activatedLink(link1)">Search 1</a>
+    <a *ngIf="link2" routerLink="{{ link2 }}" (click)="activatedLink(link2)">Search 2</a>
+    <a *ngIf="link3" routerLink="{{ link3 }}" (click)="activatedLink(link3)">Search 3</a>
+    <a *ngIf="link4" routerLink="{{ link4 }}" (click)="activatedLink(link4)">Search 4</a>
+    <div class="search-container">
+      <form>
+        <input type="text" placeholder="Search.." name="search" [(ngModel)]="Search">
+        <button type="button" (click)="search()"><i class="fa fa-search"></i> Search</button>
+      </form>
+    </div>
+</div>

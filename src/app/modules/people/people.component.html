@@ -1,0 +1,9 @@
+<div class="container">
+  <h3>People</h3>
+  <ul>
+    <li *ngFor="let person of people; let i = index;">
+        {{ person.name }} / {{ person.height | height }} / {{ person.homeworld | homeworld | async}}
+        <a class="datails" (click)="details(person.url)"> More details</a>
+    </li>
+</ul>
+</div>

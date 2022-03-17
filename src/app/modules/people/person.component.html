@@ -1,0 +1,14 @@
+<div class="container">
+    <ul>
+        <li>Name: {{ person.name }}</li>        
+        <li>Gender:  {{ person.gender }}</li>        
+        <li>Height:  {{ person.height | height }}</li>        
+        <li>Homeworld:  {{ person.homeworld | homeworld | async}}</li>
+        <li>Birth_year:  {{ person.birth_year }}</li>
+    </ul> 
+    
+    <div class="back">
+        <a routerLink="/people">Back</a>
+        
+    </div>
+</div>
